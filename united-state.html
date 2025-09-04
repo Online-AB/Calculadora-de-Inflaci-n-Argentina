@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Referrer Policy (Fixing Incorrect Syntax) -->
+    <meta name="referrer" content="always">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="US Inflation Calculator - Calculate the impact of inflation on US dollars. Precise tool for financial planning in the United States.">
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="US inflation calculator, American inflation, US dollars, CPI United States, economic calculator USA, financial tool America">
+    <!-- Page Title -->
+    <title>US Inflation Calculator - United States Dollar</title>
+    <!-- Canonical Tag (Ensures Correct URL Indexing) -->
+    <link href="" rel="canonical" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>US Inflation Calculator</h1>
+            <p>Calculate the impact of inflation on US dollars with our specialized tool for the American market</p>
+        </header>
+
+        <!-- Navigation Dropdown -->
+        <div class="nav-dropdown">
+            <label for="country-select">Select a country to calculate inflation:</label>
+            <select id="country-select" onchange="navigateToCountry()">
+                <option value="index.html">Calculadora de Inflación Argentina</option>
+                <option value="calculadora-ipc-chile.html">Calculadora de la inflación de Chile</option>
+                <option value="colombia.html">Calculadora de Inflación de Colombia</option>
+                <option value="mexico.html">Calculadora de Inflación México</option>
+                <option value="paraguay.html">Calculadora de la inflación Paraguay</option>
+                <option value="peru.html">Calculadora de inflación de Perú</option>
+                <option value="uruguay.html">Calculadora de inflación de Uruguay</option>
+                <option value="united-state.html">US Inflation Calculator</option>
+            </select>
+        </div>
+
+        <!-- Calculator Section -->
+        <section class="calculator-section">
+            <h2 class="calculator-title">US Inflation Calculator</h2>
+            <form class="calculator-form" id="inflation-form">
+                <div class="form-group">
+                    <label for="initial-amount">Initial Amount (USD):</label>
+                    <input type="number" id="initial-amount" placeholder="Ex: 10000" required>
+                </div>
+                <div class="form-group">
+                    <label for="inflation-rate">Annual Inflation Rate (%):</label>
+                    <input type="number" id="inflation-rate" step="0.01" placeholder="Ex: 2.5" required>
+                </div>
+                <div class="form-group">
+                    <label for="years">Number of Years:</label>
+                    <input type="number" id="years" placeholder="Ex: 5" required>
+                </div>
+                <button type="submit" class="calculate-btn">Calculate Inflation</button>
+            </form>
+            
+            <div class="result-section" id="result-section">
+                <div class="result-value" id="result-value"></div>
+                <div class="result-description" id="result-description"></div>
+            </div>
+
+            <div class="cta-section">
+                <a href="https://calculadorade-inflacion.com/united-state.html" class="cta-btn">US Inflation Calculator</a>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <h2>Understanding Inflation in the United States</h2>
+            <p>The United States has established one of the world's most sophisticated monetary policy frameworks, with the Federal Reserve System (Fed) serving as the central bank responsible for maintaining price stability and promoting maximum employment. The Fed has implemented an inflation targeting regime with a long-run goal of 2% inflation, as measured by the annual change in the price index for personal consumption expenditures (PCE).</p>
+            
+            <p>The Consumer Price Index (CPI) is the most widely recognized measure of inflation in the United States, calculated monthly by the Bureau of Labor Statistics (BLS). The CPI reflects the average change in prices paid by consumers for a basket of goods and services, including food, energy, housing, transportation, medical care, recreation, education, and other goods and services.</p>
+            
+            <p>The US economy, being the world's largest and most influential, is affected by various factors that can impact inflation. These include changes in energy prices, particularly oil and natural gas, fluctuations in food prices due to weather conditions and global supply chains, labor market conditions, fiscal policy decisions, international trade dynamics, and monetary policy actions by the Federal Reserve.</p>
+            
+            <p>For American citizens and residents, understanding the impact of inflation is crucial for making informed financial decisions. Our inflation calculator allows you to project how inflation will affect the real value of your savings in US dollars over time, which is essential for retirement planning, investment decisions, and long-term financial planning.</p>
+            
+            <p>In the United States, where a sophisticated financial system offers numerous investment alternatives, it's important to consider instruments that can potentially offer returns above the inflation rate. These options may include Treasury Inflation-Protected Securities (TIPS), stock market investments through index funds or individual stocks, real estate investments, corporate bonds, commodities, or other inflation-hedged assets that have historically served as protection against inflation in the American economy.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="blog.html">Blog</a>
+                <a href="about-us.html">About Us</a>
+                <a href="contact-us.html">Contact</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p>&copy; 2024 Inflation Calculator. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
+

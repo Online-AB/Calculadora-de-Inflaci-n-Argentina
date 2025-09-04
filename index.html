@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Referrer Policy (Fixing Incorrect Syntax) -->
+    <meta name="referrer" content="always">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Calculadora de inflación - Una herramienta simple para conocer el impacto de la inflación en tu dinero. Ingresa valores y obtén resultados precisos al instante.">
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="calculadora inflación, inflación Argentina, calculadora económica, impacto inflación, herramienta financiera, cálculo inflación">
+    <!-- Page Title -->
+    <title>Calculadora de Inflaci&oacute;n Argentina.</title>
+    <!-- Canonical Tag (Ensures Correct URL Indexing) -->
+    <link href="" rel="canonical" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Calculadora de Inflación Argentina</h1>
+            <p>Descubre el impacto real de la inflación en tu dinero con nuestra herramienta precisa y fácil de usar</p>
+        </header>
+
+        <!-- Navigation Dropdown -->
+        <div class="nav-dropdown">
+            <label for="country-select">Selecciona un país para calcular la inflación:</label>
+            <select id="country-select" onchange="navigateToCountry()">
+                <option value="index.html">Calculadora de Inflación Argentina</option>
+                <option value="calculadora-ipc-chile.html">Calculadora de la inflación de Chile</option>
+                <option value="colombia.html">Calculadora de Inflación de Colombia</option>
+                <option value="mexico.html">Calculadora de Inflación México</option>
+                <option value="paraguay.html">Calculadora de la inflación Paraguay</option>
+                <option value="peru.html">Calculadora de inflación de Perú</option>
+                <option value="uruguay.html">Calculadora de inflación de Uruguay</option>
+                <option value="united-state.html">US Inflation Calculator</option>
+            </select>
+        </div>
+
+        <!-- Calculator Section -->
+        <section class="calculator-section">
+            <h2 class="calculator-title">Calculadora de Inflación Argentina</h2>
+            <form class="calculator-form" id="inflation-form">
+                <div class="form-group">
+                    <label for="initial-amount">Monto inicial (ARS):</label>
+                    <input type="number" id="initial-amount" placeholder="Ej: 10000" required>
+                </div>
+                <div class="form-group">
+                    <label for="inflation-rate">Tasa de inflación anual (%):</label>
+                    <input type="number" id="inflation-rate" step="0.01" placeholder="Ej: 5.5" required>
+                </div>
+                <div class="form-group">
+                    <label for="years">Número de años:</label>
+                    <input type="number" id="years" placeholder="Ej: 5" required>
+                </div>
+                <button type="submit" class="calculate-btn">Calcular Inflación</button>
+            </form>
+            
+            <div class="result-section" id="result-section">
+                <div class="result-value" id="result-value"></div>
+                <div class="result-description" id="result-description"></div>
+            </div>
+
+            <div class="cta-section">
+                <a href="https://calculadorade-inflacion.com/index.html" class="cta-btn">Calculadora de Inflación Argentina</a>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <h2>Entendiendo la Inflación en Argentina</h2>
+            <p>La inflación es uno de los fenómenos económicos más importantes que afectan la vida cotidiana de los argentinos. Se define como el aumento generalizado y sostenido de los precios de bienes y servicios en una economía durante un período determinado. En Argentina, la inflación ha sido históricamente un desafío económico significativo que ha impactado el poder adquisitivo de la población.</p>
+            
+            <p>Nuestra calculadora de inflación te permite comprender de manera práctica cómo este fenómeno afecta tus ahorros y tu capacidad de compra a lo largo del tiempo. Al ingresar un monto inicial, la tasa de inflación esperada y el período de tiempo, podrás visualizar el valor real de tu dinero en el futuro, considerando la pérdida de poder adquisitivo causada por la inflación.</p>
+            
+            <p>La importancia de entender la inflación radica en su impacto directo sobre las decisiones financieras personales. Cuando los precios suben constantemente, el dinero que tienes hoy valdrá menos mañana. Esto significa que si mantienes tus ahorros en efectivo sin ningún tipo de inversión o protección contra la inflación, estarás perdiendo poder adquisitivo gradualmente.</p>
+            
+            <p>En el contexto argentino, donde las tasas de inflación han sido históricamente elevadas, es fundamental que los ciudadanos comprendan este concepto para tomar decisiones informadas sobre sus finanzas personales. La calculadora que ofrecemos utiliza fórmulas matemáticas precisas para proyectar el impacto de la inflación, ayudándote a planificar mejor tu futuro financiero.</p>
+            
+            <p>Además de calcular el efecto de la inflación sobre un monto específico, es importante considerar estrategias de protección contra este fenómeno. Estas pueden incluir inversiones en activos que tradicionalmente mantienen o aumentan su valor durante períodos inflacionarios, como bienes raíces, acciones de empresas sólidas, o instrumentos financieros indexados a la inflación.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="blog.html">Blog</a>
+                <a href="about-us.html">Acerca de Nosotros</a>
+                <a href="contact-us.html">Contacto</a>
+                <a href="privacy-policy.html">Política de Privacidad</a>
+            </div>
+            <p>&copy; 2024 Calculadora de Inflación. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
+

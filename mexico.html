@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Referrer Policy (Fixing Incorrect Syntax) -->
+    <meta name="referrer" content="always">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Calculadora de inflación México - Calcula el impacto de la inflación en pesos mexicanos. Herramienta precisa para planificar tus finanzas en México.">
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="calculadora inflación México, inflación mexicana, pesos mexicanos, INPC México, calculadora económica México, herramienta financiera México">
+    <!-- Page Title -->
+    <title>Calculadora de Inflaci&oacute;n M&eacute;xico - Pesos Mexicanos</title>
+    <!-- Canonical Tag (Ensures Correct URL Indexing) -->
+    <link href="" rel="canonical" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Calculadora de Inflación México</h1>
+            <p>Calcula el impacto de la inflación en pesos mexicanos con nuestra herramienta especializada</p>
+        </header>
+
+        <!-- Navigation Dropdown -->
+        <div class="nav-dropdown">
+            <label for="country-select">Selecciona un país para calcular la inflación:</label>
+            <select id="country-select" onchange="navigateToCountry()">
+                <option value="index.html">Calculadora de Inflación Argentina</option>
+                <option value="calculadora-ipc-chile.html">Calculadora de la inflación de Chile</option>
+                <option value="colombia.html">Calculadora de Inflación de Colombia</option>
+                <option value="mexico.html">Calculadora de Inflación México</option>
+                <option value="paraguay.html">Calculadora de la inflación Paraguay</option>
+                <option value="peru.html">Calculadora de inflación de Perú</option>
+                <option value="uruguay.html">Calculadora de inflación de Uruguay</option>
+                <option value="united-state.html">US Inflation Calculator</option>
+            </select>
+        </div>
+
+        <!-- Calculator Section -->
+        <section class="calculator-section">
+            <h2 class="calculator-title">Calculadora de Inflación México</h2>
+            <form class="calculator-form" id="inflation-form">
+                <div class="form-group">
+                    <label for="initial-amount">Monto inicial (MXN):</label>
+                    <input type="number" id="initial-amount" placeholder="Ej: 100000" required>
+                </div>
+                <div class="form-group">
+                    <label for="inflation-rate">Tasa de inflación anual (%):</label>
+                    <input type="number" id="inflation-rate" step="0.01" placeholder="Ej: 3.8" required>
+                </div>
+                <div class="form-group">
+                    <label for="years">Número de años:</label>
+                    <input type="number" id="years" placeholder="Ej: 5" required>
+                </div>
+                <button type="submit" class="calculate-btn">Calcular Inflación</button>
+            </form>
+            
+            <div class="result-section" id="result-section">
+                <div class="result-value" id="result-value"></div>
+                <div class="result-description" id="result-description"></div>
+            </div>
+
+            <div class="cta-section">
+                <a href="https://calculadorade-inflacion.com/mexico.html" class="cta-btn">Calculadora de Inflación México</a>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <h2>La Inflación en México: Análisis y Perspectivas</h2>
+            <p>México ha logrado establecer un marco de política monetaria sólido que ha contribuido significativamente a la estabilidad de precios en las últimas décadas. El Banco de México (Banxico), como banco central del país, implementa un esquema de objetivos de inflación que busca mantener la inflación en niveles bajos y estables, con una meta del 3% anual y un intervalo de variabilidad de más o menos un punto porcentual.</p>
+            
+            <p>El Índice Nacional de Precios al Consumidor (INPC) es el indicador oficial utilizado para medir la inflación en México. Este índice refleja la variación de precios de una canasta de bienes y servicios representativa del consumo de los hogares mexicanos, y es calculado quincenalmente por el Instituto Nacional de Estadística y Geografía (INEGI).</p>
+            
+            <p>La economía mexicana, al ser una de las más grandes de América Latina y estar estrechamente integrada con la economía estadounidense a través del T-MEC (antes TLCAN), se ve influenciada por diversos factores tanto internos como externos. Entre los factores que pueden impactar la inflación en México se encuentran las fluctuaciones del tipo de cambio peso-dólar, los precios internacionales del petróleo, las condiciones climáticas que afectan la producción agrícola, y las políticas fiscales y monetarias implementadas por el gobierno.</p>
+            
+            <p>Para los ciudadanos mexicanos, entender el impacto de la inflación es crucial para la toma de decisiones financieras informadas. Nuestra calculadora de inflación te permite proyectar cómo la inflación afectará el valor real de tus ahorros en pesos mexicanos, lo que es fundamental para la planificación financiera a corto, mediano y largo plazo.</p>
+            
+            <p>En el contexto mexicano, donde existe un sistema financiero desarrollado con múltiples opciones de inversión, es importante considerar alternativas que puedan ofrecer rendimientos superiores a la inflación. Estas opciones pueden incluir Certificados de la Tesorería de la Federación (CETES), fondos de inversión, inversiones en la Bolsa Mexicana de Valores, bienes raíces, o instrumentos financieros indexados a la inflación como los UDIBONOS.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="blog.html">Blog</a>
+                <a href="about-us.html">Acerca de Nosotros</a>
+                <a href="contact-us.html">Contacto</a>
+                <a href="privacy-policy.html">Política de Privacidad</a>
+            </div>
+            <p>&copy; 2024 Calculadora de Inflación. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
+

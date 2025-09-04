@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Referrer Policy (Fixing Incorrect Syntax) -->
+    <meta name="referrer" content="always">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Contacto - Ponte en contacto con nuestro equipo para consultas, sugerencias o soporte técnico sobre nuestras calculadoras de inflación.">
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="contacto, soporte técnico, consultas inflación, sugerencias calculadora, ayuda financiera, contactar equipo">
+    <!-- Page Title -->
+    <title>Contacto - Calculadora de Inflaci&oacute;n</title>
+    <!-- Canonical Tag (Ensures Correct URL Indexing) -->
+    <link href="" rel="canonical" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte. Ponte en contacto con nuestro equipo para cualquier consulta o sugerencia</p>
+        </header>
+
+        <!-- Contact Form Section -->
+        <section class="calculator-section">
+            <h2 class="calculator-title">Envíanos un Mensaje</h2>
+            <form class="calculator-form" id="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Nombre completo:</label>
+                    <input type="text" id="contact-name" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Correo electrónico:</label>
+                    <input type="email" id="contact-email" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-subject">Asunto:</label>
+                    <select id="contact-subject" required>
+                        <option value="">Selecciona un asunto</option>
+                        <option value="consulta-general">Consulta General</option>
+                        <option value="soporte-tecnico">Soporte Técnico</option>
+                        <option value="sugerencia">Sugerencia de Mejora</option>
+                        <option value="error-calculo">Reporte de Error en Cálculo</option>
+                        <option value="nueva-funcionalidad">Solicitud de Nueva Funcionalidad</option>
+                        <option value="colaboracion">Propuesta de Colaboración</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Mensaje:</label>
+                    <textarea id="contact-message" rows="6" placeholder="Describe tu consulta o mensaje..." required style="width: 100%; padding: 15px; border: 2px solid #e1e8ed; border-radius: 10px; font-size: 1rem; font-family: inherit; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" class="calculate-btn">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="content-section">
+            <h2>Información de Contacto</h2>
+            <p>Nuestro equipo está comprometido con brindar el mejor soporte posible a nuestros usuarios. Ya sea que tengas una pregunta sobre cómo usar nuestras calculadoras, una sugerencia para mejorar nuestros servicios, o hayas encontrado algún problema técnico, estamos aquí para ayudarte.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px;">
+                <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; border: 2px solid #e1e8ed;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">Soporte Técnico</h3>
+                    <p>Si experimentas problemas técnicos con nuestras calculadoras o tienes dificultades para acceder a alguna funcionalidad, nuestro equipo técnico está listo para asistirte.</p>
+                    <p><strong>Tiempo de respuesta:</strong> 24-48 horas</p>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; border: 2px solid #e1e8ed;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">Consultas Generales</h3>
+                    <p>Para preguntas sobre cómo interpretar los resultados de nuestras calculadoras, información sobre inflación, o cualquier consulta general sobre nuestros servicios.</p>
+                    <p><strong>Tiempo de respuesta:</strong> 24-72 horas</p>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; border: 2px solid #e1e8ed;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">Sugerencias y Mejoras</h3>
+                    <p>Valoramos enormemente la retroalimentación de nuestros usuarios. Si tienes ideas para mejorar nuestras herramientas o sugerencias para nuevas funcionalidades, nos encantaría escucharte.</p>
+                    <p><strong>Tiempo de respuesta:</strong> 48-96 horas</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Preguntas Frecuentes</h2>
+            <div style="margin-top: 20px;">
+                <div style="margin-bottom: 25px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea;">
+                    <h4 style="color: #2c3e50; margin-bottom: 10px;">¿Cómo funcionan las calculadoras de inflación?</h4>
+                    <p style="margin: 0;">Nuestras calculadoras utilizan la fórmula estándar de valor futuro ajustado por inflación: Valor Futuro = Valor Presente × (1 + tasa de inflación)^número de años. Esto te permite ver cómo la inflación afectará el poder adquisitivo de tu dinero a lo largo del tiempo.</p>
+                </div>
+                
+                <div style="margin-bottom: 25px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea;">
+                    <h4 style="color: #2c3e50; margin-bottom: 10px;">¿Los cálculos son precisos?</h4>
+                    <p style="margin: 0;">Sí, utilizamos fórmulas matemáticas estándar empleadas por instituciones financieras. Sin embargo, ten en cuenta que los resultados son proyecciones basadas en las tasas de inflación que ingreses, y la inflación real puede variar.</p>
+                </div>
+                
+                <div style="margin-bottom: 25px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea;">
+                    <h4 style="color: #2c3e50; margin-bottom: 10px;">¿Puedo usar las calculadoras en mi teléfono móvil?</h4>
+                    <p style="margin: 0;">Absolutamente. Nuestro sitio web está completamente optimizado para dispositivos móviles, tablets y computadoras de escritorio. Puedes acceder a todas nuestras calculadoras desde cualquier dispositivo con conexión a internet.</p>
+                </div>
+                
+                <div style="margin-bottom: 25px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea;">
+                    <h4 style="color: #2c3e50; margin-bottom: 10px;">¿Planean agregar más países?</h4>
+                    <p style="margin: 0;">Sí, estamos trabajando constantemente en expandir nuestras herramientas para cubrir más países de América Latina y otras regiones. Si hay un país específico que te gustaría que incluyéramos, no dudes en contactarnos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="blog.html">Blog</a>
+                <a href="about-us.html">Acerca de Nosotros</a>
+                <a href="contact-us.html">Contacto</a>
+                <a href="privacy-policy.html">Política de Privacidad</a>
+            </div>
+            <p>&copy; 2024 Calculadora de Inflación. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Contact form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form values
+                    const name = document.getElementById('contact-name').value;
+                    const email = document.getElementById('contact-email').value;
+                    const subject = document.getElementById('contact-subject').value;
+                    const message = document.getElementById('contact-message').value;
+                    
+                    // Simple validation
+                    if (!name || !email || !subject || !message) {
+                        alert('Por favor, completa todos los campos.');
+                        return;
+                    }
+                    
+                    // Simulate form submission
+                    const submitBtn = contactForm.querySelector('.calculate-btn');
+                    const originalText = submitBtn.textContent;
+                    submitBtn.textContent = 'Enviando...';
+                    submitBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        alert('¡Gracias por tu mensaje! Te responderemos pronto.');
+                        contactForm.reset();
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    }, 2000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

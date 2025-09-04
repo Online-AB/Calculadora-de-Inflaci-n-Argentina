@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Referrer Policy (Fixing Incorrect Syntax) -->
+    <meta name="referrer" content="always">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Calculadora de inflación Perú - Calcula el impacto de la inflación en soles peruanos. Herramienta precisa para planificar tus finanzas en Perú.">
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="calculadora inflación Perú, inflación peruana, soles peruanos, IPC Perú, calculadora económica Perú, herramienta financiera Perú">
+    <!-- Page Title -->
+    <title>Calculadora de Inflaci&oacute;n Per&uacute; - Soles Peruanos</title>
+    <!-- Canonical Tag (Ensures Correct URL Indexing) -->
+    <link href="" rel="canonical" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Calculadora de Inflación Perú</h1>
+            <p>Calcula el impacto de la inflación en soles peruanos con nuestra herramienta especializada</p>
+        </header>
+
+        <!-- Navigation Dropdown -->
+        <div class="nav-dropdown">
+            <label for="country-select">Selecciona un país para calcular la inflación:</label>
+            <select id="country-select" onchange="navigateToCountry()">
+                <option value="index.html">Calculadora de Inflación Argentina</option>
+                <option value="calculadora-ipc-chile.html">Calculadora de la inflación de Chile</option>
+                <option value="colombia.html">Calculadora de Inflación de Colombia</option>
+                <option value="mexico.html">Calculadora de Inflación México</option>
+                <option value="paraguay.html">Calculadora de la inflación Paraguay</option>
+                <option value="peru.html">Calculadora de inflación de Perú</option>
+                <option value="uruguay.html">Calculadora de inflación de Uruguay</option>
+                <option value="united-state.html">US Inflation Calculator</option>
+            </select>
+        </div>
+
+        <!-- Calculator Section -->
+        <section class="calculator-section">
+            <h2 class="calculator-title">Calculadora de Inflación Perú</h2>
+            <form class="calculator-form" id="inflation-form">
+                <div class="form-group">
+                    <label for="initial-amount">Monto inicial (PEN):</label>
+                    <input type="number" id="initial-amount" placeholder="Ej: 50000" required>
+                </div>
+                <div class="form-group">
+                    <label for="inflation-rate">Tasa de inflación anual (%):</label>
+                    <input type="number" id="inflation-rate" step="0.01" placeholder="Ej: 2.8" required>
+                </div>
+                <div class="form-group">
+                    <label for="years">Número de años:</label>
+                    <input type="number" id="years" placeholder="Ej: 5" required>
+                </div>
+                <button type="submit" class="calculate-btn">Calcular Inflación</button>
+            </form>
+            
+            <div class="result-section" id="result-section">
+                <div class="result-value" id="result-value"></div>
+                <div class="result-description" id="result-description"></div>
+            </div>
+
+            <div class="cta-section">
+                <a href="https://calculadorade-inflacion.com/peru.html" class="cta-btn">Calculadora de Inflación Perú</a>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <h2>La Inflación en Perú: Estabilidad y Crecimiento</h2>
+            <p>Perú ha logrado consolidarse como una de las economías más estables de América Latina en términos de control inflacionario. El Banco Central de Reserva del Perú (BCRP) ha implementado exitosamente un esquema de metas explícitas de inflación desde el año 2002, estableciendo como objetivo mantener la inflación en 2% anual, con un rango de tolerancia entre 1% y 3%. Esta política ha contribuido significativamente a la estabilidad macroeconómica del país.</p>
+            
+            <p>El Índice de Precios al Consumidor (IPC) de Lima Metropolitana es el indicador oficial utilizado para medir la inflación en Perú. Este índice, calculado mensualmente por el Instituto Nacional de Estadística e Informática (INEI), refleja la variación de precios de una canasta de bienes y servicios representativa del consumo de los hogares limeños, y por extensión, sirve como referencia para todo el país.</p>
+            
+            <p>La economía peruana, caracterizada por su diversificación sectorial y su apertura al comercio internacional, se ve influenciada por diversos factores que pueden impactar la inflación. Entre estos factores se encuentran los precios internacionales de los metales, dado que Perú es un importante productor minero, las fluctuaciones del tipo de cambio del sol frente al dólar estadounidense, las condiciones climáticas que afectan la producción agrícola, y los precios internacionales del petróleo.</p>
+            
+            <p>Para los ciudadanos peruanos, entender el impacto de la inflación es crucial para la planificación financiera personal. Nuestra calculadora de inflación te permite proyectar cómo la inflación afectará el valor real de tus ahorros en soles peruanos, lo que es fundamental para tomar decisiones informadas sobre inversiones, ahorros y gastos futuros.</p>
+            
+            <p>En el contexto peruano, donde el sistema financiero ha experimentado un desarrollo considerable y ofrece múltiples alternativas de inversión, es importante considerar instrumentos que puedan ofrecer rendimientos superiores a la inflación. Estas opciones pueden incluir depósitos a plazo fijo, fondos mutuos, inversiones en la Bolsa de Valores de Lima, bonos del tesoro público, o inversiones en bienes raíces, que históricamente han servido como cobertura contra la inflación en la economía peruana.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="blog.html">Blog</a>
+                <a href="about-us.html">Acerca de Nosotros</a>
+                <a href="contact-us.html">Contacto</a>
+                <a href="privacy-policy.html">Política de Privacidad</a>
+            </div>
+            <p>&copy; 2024 Calculadora de Inflación. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Referrer Policy (Fixing Incorrect Syntax) -->
+    <meta name="referrer" content="always">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Calculadora de inflación Colombia - Calcula el impacto de la inflación en pesos colombianos. Herramienta precisa para planificar tus finanzas en Colombia.">
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="calculadora inflación Colombia, inflación colombiana, pesos colombianos, IPC Colombia, calculadora económica Colombia, herramienta financiera Colombia">
+    <!-- Page Title -->
+    <title>Calculadora de Inflaci&oacute;n Colombia - Pesos Colombianos</title>
+    <!-- Canonical Tag (Ensures Correct URL Indexing) -->
+    <link href="" rel="canonical" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Calculadora de Inflación Colombia</h1>
+            <p>Herramienta especializada para calcular el impacto de la inflación en pesos colombianos</p>
+        </header>
+
+        <!-- Navigation Dropdown -->
+        <div class="nav-dropdown">
+            <label for="country-select">Selecciona un país para calcular la inflación:</label>
+            <select id="country-select" onchange="navigateToCountry()">
+                <option value="index.html">Calculadora de Inflación Argentina</option>
+                <option value="calculadora-ipc-chile.html">Calculadora de la inflación de Chile</option>
+                <option value="colombia.html">Calculadora de Inflación de Colombia</option>
+                <option value="mexico.html">Calculadora de Inflación México</option>
+                <option value="paraguay.html">Calculadora de la inflación Paraguay</option>
+                <option value="peru.html">Calculadora de inflación de Perú</option>
+                <option value="uruguay.html">Calculadora de inflación de Uruguay</option>
+                <option value="united-state.html">US Inflation Calculator</option>
+            </select>
+        </div>
+
+        <!-- Calculator Section -->
+        <section class="calculator-section">
+            <h2 class="calculator-title">Calculadora de Inflación Colombia</h2>
+            <form class="calculator-form" id="inflation-form">
+                <div class="form-group">
+                    <label for="initial-amount">Monto inicial (COP):</label>
+                    <input type="number" id="initial-amount" placeholder="Ej: 5000000" required>
+                </div>
+                <div class="form-group">
+                    <label for="inflation-rate">Tasa de inflación anual (%):</label>
+                    <input type="number" id="inflation-rate" step="0.01" placeholder="Ej: 4.2" required>
+                </div>
+                <div class="form-group">
+                    <label for="years">Número de años:</label>
+                    <input type="number" id="years" placeholder="Ej: 5" required>
+                </div>
+                <button type="submit" class="calculate-btn">Calcular Inflación</button>
+            </form>
+            
+            <div class="result-section" id="result-section">
+                <div class="result-value" id="result-value"></div>
+                <div class="result-description" id="result-description"></div>
+            </div>
+
+            <div class="cta-section">
+                <a href="https://calculadorade-inflacion.com/colombia.html" class="cta-btn">Calculadora de Inflación Colombia</a>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <h2>Entendiendo la Inflación en Colombia</h2>
+            <p>Colombia ha experimentado una transformación significativa en su manejo de la política monetaria durante las últimas décadas. El Banco de la República, como autoridad monetaria del país, ha implementado un esquema de inflación objetivo que busca mantener la estabilidad de precios y contribuir al crecimiento económico sostenible. La meta de inflación establecida por el banco central colombiano se sitúa en el 3%, con un rango de tolerancia entre 2% y 4%.</p>
+            
+            <p>El Índice de Precios al Consumidor (IPC) en Colombia refleja la variación de precios de una canasta de bienes y servicios que representa el patrón de consumo de los hogares colombianos. Este índice es calculado mensualmente por el Departamento Administrativo Nacional de Estadística (DANE) y constituye la medida oficial de inflación en el país.</p>
+            
+            <p>La economía colombiana, siendo una de las más diversificadas de América Latina, se ve influenciada por diversos factores que pueden impactar la inflación. Entre estos se encuentran los precios internacionales del petróleo, dado que Colombia es un importante productor de crudo, las fluctuaciones del tipo de cambio del peso colombiano frente al dólar estadounidense, y las condiciones climáticas que pueden afectar la producción agrícola.</p>
+            
+            <p>Para los ciudadanos colombianos, comprender el impacto de la inflación es fundamental para tomar decisiones financieras informadas. Nuestra calculadora te permite visualizar cómo la inflación afectará el valor real de tus ahorros en pesos colombianos a lo largo del tiempo, lo que es esencial para la planificación financiera personal y familiar.</p>
+            
+            <p>En el contexto colombiano, donde el sistema financiero ofrece diversas alternativas de inversión, es importante considerar instrumentos que puedan ofrecer rendimientos superiores a la inflación. Estos pueden incluir certificados de depósito a término (CDT), fondos de inversión, acciones en la Bolsa de Valores de Colombia, o inversiones en finca raíz, que históricamente han servido como cobertura contra la inflación.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="blog.html">Blog</a>
+                <a href="about-us.html">Acerca de Nosotros</a>
+                <a href="contact-us.html">Contacto</a>
+                <a href="privacy-policy.html">Política de Privacidad</a>
+            </div>
+            <p>&copy; 2024 Calculadora de Inflación. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
+
